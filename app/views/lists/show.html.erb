@@ -1,0 +1,13 @@
+
+<p>
+  <strong>Desciption:</strong>
+  <%= @list.desciption %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @list.completed %>
+</p>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>

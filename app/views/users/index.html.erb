@@ -1,0 +1,25 @@
+<h1>Progressive Rails Application </h1>
+
+<% @user.each do |user| %>
+  <p>
+    <strong>First name:</strong>
+    <%= user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= user.last_name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= user.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= user.phone %>
+  </p>
+  <br>
+<% end %>
+<%= link_to "New User", new_user_path %>
